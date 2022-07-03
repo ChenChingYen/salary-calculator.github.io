@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Salary Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" autocomplete="off">
+            <table class="">
+                <tr>
+                    <td>Month</td>
+                    <td>
+                        <select name="months" id="months" class="input-field">
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Daily Basic</td>
+                    <td><input type="text" id="basics" name="basics" class="input-field"></td>
+                </tr>
+                <tr>
+                    <td>Normal Paying Day</td>
+                    <td><input type="text" id="normal_pay" name="normal_pay" class="input-field"></td>
+                </tr>
+                <tr>
+                    <td>Double Paying Day</td>
+                    <td><input type="text" id="double_pay" name="double_pay" class="input-field"></td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td><input type="text" id="saturday" name="saturday" class="input-field"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" class="submit-btn" value="submit"></td>
+                </tr>
+            </table>
+        </form>
+        <div class="output show">
+            <div class="output-center">
+                <div>
+                    <div class="date-details"><span id="month-display"></span> <span id="year-display"></span></div>
+                    <table class="output-table">
+                        <tr>
+                            <th></th>
+                            <th>Count</th>
+                            <th></th>
+                            <th>Total</th>
+                        </tr>
+                        <tr>
+                            <td>Normal Paying Day</td>
+                            <td id="normal_day"></td>
+                            <td>* <span class="basic"></span></td>
+                            <td id="normal_day_total"></td>
+                        </tr>
+                        <tr>
+                            <td>EPF (9%)</td>
+                            <td></td>
+                            <td></td>
+                            <td id="after_epf"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td id="normal_day_total_after_epf"></td>
+                        </tr>
+                        <tr>
+                            <td>Double Paying Day</td>
+                            <td id="double_day"></td>
+                            <td>* <span id="double_basic"></span></td>
+                            <td id="double_day_total"></td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td id="saturday_day"></td>
+                            <td>* <span class="basic"></span></td>
+                            <td id="saturday_total"></td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td></td>
+                            <td></td>
+                            <td class="total_salary"></td>
+                        </tr>
+                    </table>
+                    <div class="result">
+                        <div>
+                            <span>Working Days: </span><span id="total_working_day"></span>
+                        </div>
+                        <div>
+                            <span>Total Salary: </span><span class="total_salary"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

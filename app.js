@@ -55,9 +55,9 @@ submitBtn.addEventListener("click", (event)=>{
     var temp = normalDayInput*basicInput;
     normalDayTotalDisplay.innerHTML = temp.toFixed(2);
 
-    afterEPF.innerHTML = "- "+(temp*0.09).toFixed(2);
+    afterEPF.innerHTML = "- "+(temp*0.11).toFixed(2);
 
-    temp *= 0.91;
+    temp *= 0.89;
     normalDayTotalAfterEPF.innerHTML = temp.toFixed(2);
 
     var doublePayTotal = doubleDayInput*basicInput*2;

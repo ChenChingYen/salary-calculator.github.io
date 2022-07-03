@@ -63,7 +63,7 @@ submitBtn.addEventListener("click", (event)=>{
     var doublePayTotal = doubleDayInput*basicInput*2;
     doubleDayTotalDisplay.innerHTML = doublePayTotal.toFixed(2);
 
-    var saturdayTotal = doubleDayInput*basicInput;
+    var saturdayTotal = saturdayInput*basicInput;
     saturdayTotalDisplay.innerHTML = saturdayTotal.toFixed(2);
 
     temp = temp + doublePayTotal + saturdayTotal;

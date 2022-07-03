@@ -108,8 +108,10 @@ table{
         display: block;
     }
     .output{
-        font-size: 12px;
         padding: 50px 0;
+    }
+    .output *{
+        font-size: 15px;
     }
     .output-table td{
         padding: 10px 15px;
